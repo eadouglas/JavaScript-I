@@ -15,6 +15,10 @@ const Kennan = {
   name: "Kennan",
   email: "kdiben1@tinypic.com",
   gender: "m",
+  speak: function(){
+    return `Hello, my name is ${this.name}!`;
+  } 
+    
 }
 const Mitzi = {
   id: 1,
@@ -39,9 +43,13 @@ const Antonietta = {
   name: "Antonietta",
   email: "adaine5@samsung.com",
   gender: "f",
+  multiplyNums: function(a,b){
+    return a*b;
+    
+  }
 }
+console.log(Antonietta.multiplyNums(3,100));
 
-console.log();
 
 // Write your intern objects here:
 
@@ -58,7 +66,8 @@ console.log();
 // Gannie's name
 
 // Antonietta's Gender
-console.log("Mitzi name = "+Mitzi.name+",","Kennan id = "+Kennan.id+",","Keven email = "+Keven.email+",","Gannie name = "+Gannie.name+",","Antonietta gender = "+Antonietta.gender);
+
+// console.log("Mitzi name = "+Mitzi.name+",","Kennan id = "+Kennan.id+",","Keven email = "+Keven.email+",","Gannie name = "+Gannie.name+",","Antonietta gender = "+Antonietta.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
